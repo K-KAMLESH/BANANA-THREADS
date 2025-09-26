@@ -1,0 +1,32 @@
+.item {
+  width: 20%;
+}
+.item .image img {
+  width: 100%;
+}
+.prices {
+  display: flex;
+  gap: 30px;
+  padding-left: 1vw;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.new-price {
+  font-size: clamp(11px, 2.2vw, 20px);
+}
+.old-price {
+  text-decoration: line-through;
+  font-size: clamp(10px, 2vw, 18px);
+  color: #555;
+}
+@media screen and (max-width: 1024px) {
+  .item {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .item {
+    width: 40%;
+  }
+}
